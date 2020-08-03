@@ -1,0 +1,22 @@
+<form class="search-form">
+  <mat-form-field class="search-full-width">
+    <input
+      type="text"
+      placeholder="Enter Product Name"
+      aria-label="Search"
+      matInput
+      [formControl]="searchControl"
+      [matAutocomplete]="auto"
+    />
+    <mat-icon matSuffix matTooltip="Search">search</mat-icon>
+    <mat-autocomplete
+      autoActiveFirstOption
+      #auto="matAutocomplete"
+      (optionSelected)="onSelect($event)"
+    >
+      <mat-option *ngFor="let option of options" [value]="option.productName">
+        {{ option.productName }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

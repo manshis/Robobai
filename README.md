@@ -2,25 +2,28 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
-## Development server
+## Prerequiste
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- node.js - [Download page](https://nodejs.org/en/download/) .
+- mongodb - [Download and Install MongoDB](https://www.mongodb.com/download-center/community) .
 
-## Code scaffolding
+## Run application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Config File Changes
 
-## Build
+- Go to src/server/config.js
+  - `connectionString`: Connection string of your local or remote mongoDB server.
+  - `databaseName`: Name of the database
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Install dependencies
 
-## Running unit tests
+Run `npm install` to install all dependencies.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Build and Run
 
-## Running end-to-end tests
+Run `npm run start-app` to build and run the project. This command will first build the project and store the artifact in the `dist/` directory. Then it will start the server at port 3000.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Navigate to `http://localhost:3000/`.
 
 ## Further help
 

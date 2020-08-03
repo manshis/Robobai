@@ -1,0 +1,24 @@
+li {
+  margin: 15px;
+}
+
+.nav-icon {
+  color: white;
+}
+
+.side-nav {
+  height: 100%;
+  width: 75px;
+  background-color: #434343;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.active {
+  background: #616161;
+  padding: 26px;
+}

@@ -1,0 +1,18 @@
+.product-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section {
+  width: 70%;
+  display: flex;
+}
+
+.mat-form-field {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.mat-raised-button {
+  width: 20%;
+}
